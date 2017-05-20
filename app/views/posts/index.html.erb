@@ -1,0 +1,18 @@
+<h1>List of All the Posts</h1>
+<p>This right here would be a list of all the posts you have in your blog</p>
+
+<%@posts.each do |post| %>
+
+<h3><%= link_to post.title, post %></h3>
+
+<p><%=post.body %></p>
+
+
+<%end %>
+
+<%= link_to "Add New Post", new_post_path %>
+
+
+
+
+
